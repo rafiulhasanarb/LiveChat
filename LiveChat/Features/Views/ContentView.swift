@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TitleRowView()
+            
+            ScrollView {
+                ForEach(0..<20) { _ in
+                    MessageBubbleView(message: MessageModel(id: "123654", text: "Hello there i am here to test and help your business", received: false, createdAt: Date()))
+                }
+            }
+            .padding(.top, 10)
+            .background(Color.white)
+            .cornerRadius(30, corners: [.topLeft, .topRight])
         }
-        .padding()
+        .background(Color.peach)
     }
 }
 
