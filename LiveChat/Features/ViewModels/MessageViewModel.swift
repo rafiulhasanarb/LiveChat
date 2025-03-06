@@ -34,7 +34,7 @@ final class MessageViewModel: ObservableObject {
                 }
             }
             
-            self.messages.sort { $0.createdAt > $1.createdAt }
+            self.messages.sort { $0.createdAt < $1.createdAt }
             
             if let id = self.messages.last?.id {
                 self.lastMessageId = id

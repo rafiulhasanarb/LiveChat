@@ -26,7 +26,7 @@ struct MessageBubbleView: View {
             }
             
             if showTime {
-                Text(message.createdAt.formatted(.dateTime.hour().month()))
+                Text(message.createdAt.formatted(.dateTime.hour().minute().second()))
                     .font(.caption)
                     .foregroundColor(.gray)
                     .padding(message.received ? .leading : .trailing)
