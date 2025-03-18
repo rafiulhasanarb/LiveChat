@@ -44,8 +44,7 @@ final class MessageViewModel: ObservableObject {
     
     func sendMessage(_ text: String) {
         do {
-            let newMessage = MessageModel(id: "\(UUID())", text: text, received: false, createdAt: Date())
-            
+            let newMessage = MessageModel(id: "\(UUID())", text: text, received: false, createdAt: Date())            
             try db.collection("messages").document().setData(from: newMessage)
         } catch {
             print(error.localizedDescription)
