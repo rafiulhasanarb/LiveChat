@@ -1,0 +1,39 @@
+# Xcode
+###########################
+# User-specific files
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+
+# Build generated files
+build/
+DerivedData/
+
+# Swift Package Manager
+###########################
+# .build/ stores the build artifacts for Swift packages
+.build/
+
+# CocoaPods
+###########################
+# Pods folder
+Pods/
+
+# SwiftPM
+###########################
+# Swift Package Manager
+Package.resolved
+
+# Xcode archives
+###########################
+*.xcarchive
+
+# Other
+###########################
+# User-specific configuration
+*.swp
+*~.nib
+*~.pch
+.DS_Store
+Thumbs.db
